@@ -12,17 +12,9 @@ import styles from "./Cards.module.css";
 import cx from "classnames";
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
-  // const [confirmedCases, setConfirmedCases] = useState();
-
-  // useEffect(() => {
-  //   setConfirmedCases(confirmed);
-  //   console.log(confirmedCases);
-  // }, [confirmedCases, confirmed]);
-
   if (!confirmed) {
     return "Loading...";
   }
-
   return (
     <div className={styles.container}>
       {/* justify center for all items inside the grid */}
